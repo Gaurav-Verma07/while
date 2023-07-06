@@ -1,0 +1,12 @@
+.display {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+@media (min-width: 600px) {
+  .display {
+    width: 723px;
+    height: 595px;
+  }
+}

@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  /*Adds smooth scrolling instead of snapping to element*/
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  overflow-x: hidden;
+  font-weight: 500;
+}
