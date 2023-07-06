@@ -14,4 +14,11 @@ body {
   font-style: normal;
   overflow-x: hidden;
   font-weight: 500;
+  color:#777;
+}
+
+.gradient {
+  background: linear-gradient(90deg, #04a0f4, #11b7da, #23d5b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

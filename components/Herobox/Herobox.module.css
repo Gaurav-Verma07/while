@@ -1,12 +1,53 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+
 .display {
   position: relative;
   width: 400px;
   height: 400px;
 }
 
+.content {
+  max-width: 570px;
+}
+
+.heading {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 55px;
+}
+
+.subtext {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+@media (min-width: 900px) {
+  .section {
+    flex-direction: row;
+  }
+}
 @media (min-width: 600px) {
   .display {
     width: 723px;
     height: 595px;
+  }
+  .heading {
+    color: #777;
+    font-family: Montserrat;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 85px;
+  }
+  .subtext {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
   }
 }
