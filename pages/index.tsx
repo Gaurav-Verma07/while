@@ -1,4 +1,4 @@
-import { Herobox } from '@/components';
+import { Herobox, Stats } from '@/components';
 import Head from 'next/head';
 
 const index = () => {
@@ -8,6 +8,7 @@ const index = () => {
         <title>While</title>
       </Head>
       <Herobox />
+      <Stats />
     </div>
   );
 };

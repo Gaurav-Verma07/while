@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import { Layout } from '@/components';
 import { AppProps } from 'next/app';
 import '../styles/globals.css';
