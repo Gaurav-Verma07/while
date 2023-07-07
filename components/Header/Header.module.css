@@ -41,14 +41,14 @@
   line-height: 40px;
   text-decoration: none !important;
   color: #777;
-  margin: 0 25px;
 }
 /*Styling Hamburger Icon*/
 
 .hamburger div {
   width: 30px;
   height: 3px;
-  background: linear-gradient(90deg, #04A0F4 0%, #11B7DA 48.44%, #23D5B8 100%);  margin: 5px;
+  background: linear-gradient(90deg, #04a0f4 0%, #11b7da 48.44%, #23d5b8 100%);
+  margin: 5px;
   transition: all 0.3s ease;
 }
 
@@ -100,10 +100,12 @@
     flex-direction: column;
     clip-path: circle(50px at 90% -20%);
     -webkit-clip-path: circle(50px at 90% -10%);
-    transition: all .1s ease-out;
+    transition: all 0.3s ease-out;
     pointer-events: none;
-    border-left: 1px solid;
-    margin-bottom: 20px;
+    background: #fff;
+    box-shadow: -3px 0px 11px 0px rgba(0, 0, 0, 0.25);
+    padding-bottom: 20px;
+    border-bottom-left-radius: 15px;
   }
   .navlinks.open {
     clip-path: circle(1000px at 90% -10%);
@@ -138,6 +140,7 @@
   } */
   li.fade {
     opacity: 1;
+    margin: 5px 0;
   }
 }
 
