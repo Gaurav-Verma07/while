@@ -1,93 +1,91 @@
 .heading {
-    font-size: 35px;
-    font-weight: 600;
-    color: black;
-    margin: 10%;
-  }
+  font-size: 35px;
+  font-weight: 600;
+  color: black;
+  margin: 10%;
+}
 
-.row{
+.row {
   display: flex;
   justify-content: center;
   flex-direction: column;
-
+  flex-wrap: wrap;
 }
 
-.cardcontainer{
+.cardcontainer {
   text-align: center;
   margin: 60px auto;
   width: auto;
 }
 
-.cardBody{
-  padding: 10%;
+.cardBody {
+  padding: 40px 20px;
 }
 
-.card1{
-  box-shadow: 0px 0px 30px 4px rgba(255, 0, 0, 0.40);
+.cardMain {
   width: 325px;
   height: 393px;
+  border-radius: 20px;
+  border-color: transparent;
+  padding: 40px 20px;
 }
 
-.card2{
-  box-shadow: 0px 0px 30px 4px rgba(0, 128, 0, 0.40);
-  width: 325px;
-  height: 393px;
+.card1 {
+  box-shadow: 0px 0px 30px 4px rgba(255, 0, 0, 0.4);
 }
 
-.card3{
-  box-shadow: 0px 0px 30px 4px rgba(0, 0, 255, 0.40);
-  width: 325px;
-  height: 393px;
+.card2 {
+  box-shadow: 0px 0px 30px 4px rgba(0, 128, 0, 0.4);
 }
 
-.card4{
-  box-shadow: 0px 0px 30px 4px rgba(128, 0, 128, 0.40);
-  width: 325px;
-  height: 393px;
+.card3 {
+  box-shadow: 0px 0px 30px 4px rgba(0, 0, 255, 0.4);
 }
 
-.card5{
-  box-shadow: 0px 0px 30px 4px rgba(0, 128, 128, 0.40);
-  width: 325px;
-  height: 393px;
+.card4 {
+  box-shadow: 0px 0px 30px 4px rgba(128, 0, 128, 0.4);
 }
 
-.card6{
-  box-shadow: 0px 0px 30px 4px rgba(255, 0, 0, 0.40);
-   width: 325px;
-  height: 393px;
+.card5 {
+  box-shadow: 0px 0px 30px 4px rgba(0, 128, 128, 0.4);
 }
 
-.cardTitle{
+.card6 {
+  box-shadow: 0px 0px 30px 4px rgba(255, 0, 0, 0.4);
+}
+
+.cardTitle {
   font-size: 24px;
   font-weight: 500;
   line-height: 35px;
   margin-bottom: 30px;
 }
 
-.cardText{
+.cardText {
   font-size: 16px;
+  color: #777;
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
 }
 
-  @media (min-width: 600px) {
-    .heading {
-      font-size: 60px;
-      font-weight: 700;
-    }
-
-    .container{
-      margin: 10%;
-    }
-    .row{
-      flex-direction: row;
-    }
-    .cardText{
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 25px;
-    }
+@media (min-width: 600px) {
+  .heading {
+    font-size: 60px;
+    font-weight: 700;
   }
+
+  .container {
+    margin: 10%;
+    padding-top: 20px;
+  }
+  .row {
+    flex-direction: row;
+  }
+  .cardText {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}

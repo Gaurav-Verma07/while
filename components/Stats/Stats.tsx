@@ -2,15 +2,15 @@ import classes from './Stats.module.css';
 
 const data = [
   {
-    data: '100+',
+    data: '50+',
     type: 'Colleges',
   },
   {
-    data: '1M+',
+    data: '1K+',
     type: 'Students',
   },
   {
-    data: '200+',
+    data: '20+',
     type: 'Mentors',
   },
 ];

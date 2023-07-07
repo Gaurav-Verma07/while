@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <nav className={classes.nav}>
       <div className={classes.logo}>
-        <img  src="/assets/whileLogo.png" layout="fill" alt="While logo" />
+        <img  src="/assets/whileLogo.png" alt="While logo" />
       </div>
       <div
         className={classes.hamburger}
@@ -34,17 +34,17 @@ const Header = () => {
           </Link>
         </li>
         <li className={clsx(toggle ? classes.fade : '')}>
-          <Link className={classes.links} href="#feature">
+          <Link className={classes.links} href="#features">
             Feature
           </Link>
         </li>
         <li className={clsx(toggle ? classes.fade : '')}>
-          <Link className={classes.links} href="/goals">
+          <Link className={classes.links} href="#goals">
             Goals
           </Link>
         </li>
         <li className={clsx(toggle ? classes.fade : '')}>
-          <Link className={classes.joinbtn} href="/goals">
+          <Link className={classes.joinbtn} href="/join">
             Join Us
           </Link>
         </li>

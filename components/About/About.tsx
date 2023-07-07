@@ -3,7 +3,7 @@ import classes from './About.module.css';
 
 const About = () => {
   return (
-    <section className={classes.section}>
+    <section className={classes.section} id="about">
       <h1 className={classes.heading}>
         <center>
           About<span className="gradient"> Us</span>
