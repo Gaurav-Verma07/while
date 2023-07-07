@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <nav className={classes.nav}>
       <div className={classes.logo}>
-        <Image src="/assets/whileLogo.png" layout="fill" alt="While logo" />
+        <img  src="/assets/whileLogo.png" alt="While logo" />
       </div>
       <div
         className={classes.hamburger}
