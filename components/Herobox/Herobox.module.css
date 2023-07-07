@@ -8,7 +8,7 @@
 
 .display {
   position: relative;
-  width: 400px;
+  width: 300px;
   height: 400px;
 }
 
@@ -20,18 +20,15 @@
   font-size: 35px;
   font-weight: 600;
   line-height: 55px;
+  max-width: 352px;
 }
 
 .subtext {
   font-size: 16px;
   line-height: 30px;
+  max-width: 370px;
 }
 
-@media (min-width: 900px) {
-  .section {
-    flex-direction: row;
-  }
-}
 @media (min-width: 600px) {
   .display {
     width: 723px;
@@ -39,15 +36,21 @@
   }
   .heading {
     color: #777;
-    font-family: Montserrat;
     font-size: 60px;
-    font-style: normal;
     font-weight: 600;
     line-height: 85px;
+    max-width: 570px;
   }
   .subtext {
     font-size: 20px;
     font-weight: 400;
     line-height: 40px;
+    max-width: 570px;
+  }
+}
+
+@media (min-width: 900px) {
+  .section {
+    flex-direction: row;
   }
 }
