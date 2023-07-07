@@ -1,207 +1,157 @@
 .nav {
-    margin-bottom: 5%;
-    top: 0%;
-    height: 4rem;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.4);
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
-    display: flex;
-    position: fixed;
-    z-index: 10;
+  position: fixed;
+  top: 0%;
+  width: 100vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 30px;
 }
-
 
 /*Styling logo*/
 
 .logo {
-    padding-bottom: 1vh;
-    /* padding-top: 0.5vh; */
-    padding-left: 5vh;
+  position: relative;
+  width: 208px;
+  height: 63px;
 }
 
 .logo img {
-    height: 4rem;
-    width: 4rem;
+  height: 4rem;
+  width: 4rem;
 }
-
 
 /*Styling Links*/
 
 .navlinks {
-    display: flex;
-    list-style: none;
-    width: 88vw;
-    padding: 0 0.7vw;
-    justify-content: space-evenly;
-    align-items: center;
-    text-transform: uppercase;
+  display: flex;
+  list-style: none;
+  padding: 0 0.7vw;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0;
 }
 
-.navlinks li a {
-    text-decoration: none;
-    margin: 0 0.7vw;
+.links {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  text-decoration: none !important;
+  color: #777;
+  margin: 0 25px;
 }
-
-.navlinks li a:hover {
-    color: #fff;
-}
-
-.navlinks li {
-    position: relative;
-}
-
-.navlinks li a::before {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 0%;
-    background-color: #fff;
-    position: absolute;
-    transition: all ease-in-out 250ms;
-    margin: 17% 0% 0% 10%;
-}
-
-.navlinks li a:hover::before {
-    width: 80%;
-}
-
-
-/*Styling Buttons*/
-
-.login-button {
-    background-color: transparent;
-    border: 1.5px solid #f2f5f7;
-    border-radius: 2em;
-    padding: 0.6rem 0.8rem;
-    margin-left: 2vw;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.login-button:hover {
-    color: #131418;
-    background-color: #f2f5f7;
-    border: 1.5px solid #f2f5f7;
-    transition: all ease-in-out 350ms;
-}
-
-.join-button {
-    color: #131418;
-    background-color: #61DAFB;
-    border: 1.5px solid #61DAFB;
-    border-radius: 2em;
-    padding: 0.6rem 0.8rem;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.join-button:hover {
-    color: #f2f5f7;
-    background-color: transparent;
-    border: 1.5px solid #f2f5f7;
-    transition: all ease-in-out 350ms;
-}
-
-
 /*Styling Hamburger Icon*/
 
 .hamburger div {
-    width: 30px;
-    height: 3px;
-    background: #f2f5f7;
-    margin: 5px;
-    transition: all 0.3s ease;
+  width: 30px;
+  height: 3px;
+  background: linear-gradient(90deg, #04A0F4 0%, #11B7DA 48.44%, #23D5B8 100%);  margin: 5px;
+  transition: all 0.3s ease;
 }
 
 .hamburger {
-    display: none;
+  display: none;
 }
 
+.joinbtn {
+  border-radius: 37px;
+  background: linear-gradient(90deg, #04a0f4, #11b7da, #23d5b8);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  text-decoration: none;
+  padding: 10px 15px;
+}
 
 /*Stying for small screens*/
 
 @media screen and (max-width: 800px) {
-    .nav {
-        height: 4rem;
-        position: fixed;
-        z-index: 3;
-    }
-    .logo{
-        padding: 0;
-    }
-    .logo img{
-        height: 4rem;
-        width: 4rem;
-    }
-    .hamburger {
-        display: block;
-        position: absolute;
-        cursor: pointer;
-        right: 5%;
-        top: 50%;
-        transform: translate(-5%, -50%);
-        z-index: 2;
-        transition: all 0.7s ease;
-    }
-    .navlinks {
-        position: fixed;
-        background: #131418;
-        height: 100vh;
-        width: 100%;
-        flex-direction: column;
-        clip-path: circle(50px at 90% -20%);
-        -webkit-clip-path: circle(50px at 90% -10%);
-        transition: all 1s ease-out;
-        pointer-events: none;
-    }
-    .navlinks.open {
-        clip-path: circle(1000px at 90% -10%);
-        -webkit-clip-path: circle(1000px at 90% -10%);
-        pointer-events: all;
-    }
-    .navlinks li {
-        opacity: 0;
-    }
-    .navlinks li:nth-child(1) {
-        transition: all 0.5s ease 0.2s;
-    }
-    .navlinks li:nth-child(2) {
-        transition: all 0.5s ease 0.4s;
-    }
-    .navlinks li:nth-child(3) {
-        transition: all 0.5s ease 0.6s;
-    }
-    .navlinks li:nth-child(4) {
-        transition: all 0.5s ease 0.7s;
-    }
-    .navlinks li:nth-child(5) {
-        transition: all 0.5s ease 0.8s;
-    }
-    .navlinks li:nth-child(6) {
-        transition: all 0.5s ease 0.9s;
-        margin: 0;
-    }
-    .navlinks li:nth-child(7) {
-        transition: all 0.5s ease 1s;
-        margin: 0;
-    }
-    li.fade {
-        opacity: 1;
-    }
+  .nav {
+    z-index: 3;
+    justify-content: space-between;
+  }
+  .logo {
+    padding: 0;
+  }
+  .logo img {
+    height: 4rem;
+    width: 4rem;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    transition: all 0.7s ease;
+  }
+  .navlinks {
+    position: fixed;
+    background: #fff;
+    backdrop-filter: blur(10px);
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(50px at 90% -20%);
+    -webkit-clip-path: circle(50px at 90% -10%);
+    transition: all .1s ease-out;
+    pointer-events: none;
+    border-left: 1px solid;
+    margin-bottom: 20px;
+  }
+  .navlinks.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+  .navlinks li {
+    opacity: 0;
+  }
+  /* .navlinks li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+  .navlinks li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .navlinks li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+  .navlinks li:nth-child(4) {
+    transition: all 0.5s ease 0.7s;
+  }
+  .navlinks li:nth-child(5) {
+    transition: all 0.5s ease 0.8s;
+  }
+  .navlinks li:nth-child(6) {
+    transition: all 0.5s ease 0.9s;
+    margin: 0;
+  }
+  .navlinks li:nth-child(7) {
+    transition: all 0.5s ease 1s;
+    margin: 0;
+  } */
+  li.fade {
+    opacity: 1;
+  }
 }
-
 
 /*Animating Hamburger Icon on Click*/
 
 .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .toggle .line2 {
-    transition: all 0.7s ease;
-    width: 0;
+  transition: all 0.7s ease;
+  width: 0;
 }
 
 .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-5px, -6px);
 }

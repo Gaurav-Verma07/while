@@ -2,6 +2,7 @@ import classes from './Header.module.css';
 import { useState } from 'react';
 import clsx from 'clsx';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Header = () => {
   const [toggle, setToogle] = useState(false);
@@ -9,7 +10,7 @@ const Header = () => {
   return (
     <nav className={classes.nav}>
       <div className={classes.logo}>
-        <img src="" alt="Logo Image" />
+        <Image src="/assets/while.png" layout="fill" alt="While logo" />
       </div>
       <div
         className={classes.hamburger}
@@ -23,16 +24,29 @@ const Header = () => {
       </div>
       <ul className={clsx(classes.navlinks, toggle ? classes.open : '')}>
         <li className={clsx(toggle ? classes.fade : '')}>
-          <Link href="/">Home</Link>
+          <Link className={classes.links} href="/">
+            Home
+          </Link>
         </li>
         <li className={clsx(toggle ? classes.fade : '')}>
-          <Link href="#about">About</Link>
+          <Link className={classes.links} href="#about">
+            About
+          </Link>
         </li>
         <li className={clsx(toggle ? classes.fade : '')}>
-          <Link href="#feature">Feature</Link>
+          <Link className={classes.links} href="#feature">
+            Feature
+          </Link>
         </li>
         <li className={clsx(toggle ? classes.fade : '')}>
-          <Link href="/goals">Goals</Link>
+          <Link className={classes.links} href="/goals">
+            Goals
+          </Link>
+        </li>
+        <li className={clsx(toggle ? classes.fade : '')}>
+          <Link className={classes.joinbtn} href="/goals">
+            Join Us
+          </Link>
         </li>
       </ul>
     </nav>
