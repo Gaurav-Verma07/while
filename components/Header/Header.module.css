@@ -15,13 +15,14 @@
 
 .logo {
   position: relative;
-  width: 208px;
+  width: 200px;
   height: 63px;
 }
 
 .logo img {
-  height: 4rem;
-  width: 4rem;
+  height: 200px;
+  width: 200px;
+  margin-top: -60px;
 }
 
 /*Styling Links*/
@@ -79,8 +80,9 @@
     padding: 0;
   }
   .logo img {
-    height: 4rem;
-    width: 4rem;
+    height: 10rem;
+    width: 10rem;
+    margin-top: -40px;
   }
   .hamburger {
     display: block;
