@@ -3,7 +3,7 @@ import classes from './Goals.module.css';
 
 const Goals = () => {
   return (
-    <section className={classes.container}>
+    <section className={classes.container} id="goals">
       <h1 className={classes.heading}>
         <center>
           Our <span className="gradient">Goals</span>

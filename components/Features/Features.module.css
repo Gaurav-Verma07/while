@@ -47,7 +47,7 @@
 
 @media (min-width: 600px) {
   .section {
-    margin: 100px 50px;
+    padding: 100px 0 0px 0;
   }
   .image {
     position: relative;
