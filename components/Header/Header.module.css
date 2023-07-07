@@ -50,7 +50,7 @@
   height: 3px;
   background: linear-gradient(90deg, #04a0f4 0%, #11b7da 48.44%, #23d5b8 100%);
   margin: 5px;
-  transition: all 0.3s ease;
+  transition: all .8s ease;
 }
 
 .hamburger {
