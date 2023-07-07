@@ -26,10 +26,6 @@ const [toggle , setToogle] = useState(false);
         <li className={clsx( toggle?classes.fade:'')}><a href="#">About</a></li>
         <li className={clsx( toggle?classes.fade:'')}><a href="/programs">Program</a></li>
         <li className={clsx( toggle?classes.fade:'')}><a href="/mentors">Mentors</a></li>
-        {/* <li className={clsx( toggle?classes.fade:'')}><a href="/teams">Teams</a></li>
-        <li className={clsx( toggle?classes.fade:'')}><a href="/startups">Startup</a></li>
-        <li className={clsx( toggle?classes.fade:'')}><a href="/gallery">Gallery</a></li>
-        <li className={clsx( toggle?classes.fade:'')}><a href="/">Contact Us</a></li> */}
     </ul>
 </nav>
   );
