@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <nav className={classes.nav}>
       <div className={classes.logo}>
-        <img  src="/assets/whileLogo.png" alt="While logo" />
+        <img src="/assets/whileLogo.png" alt="While logo" />
       </div>
       <div
         className={classes.hamburger}
@@ -24,27 +24,27 @@ const Header = () => {
       </div>
       <ul className={clsx(classes.navlinks, toggle ? classes.open : '')}>
         <li className={clsx(toggle ? classes.fade : '')}>
-          <Link className={classes.links} href="/">
+          <Link className={classes.links} href="/" onClick={() => setToogle(!true)}>
             Home
           </Link>
         </li>
         <li className={clsx(toggle ? classes.fade : '')}>
-          <Link className={classes.links} href="#about">
+          <Link className={classes.links} href="#about" onClick={() => setToogle(!true)}>
             About
           </Link>
         </li>
         <li className={clsx(toggle ? classes.fade : '')}>
-          <Link className={classes.links} href="#features">
+          <Link className={classes.links} href="#features" onClick={() => setToogle(!true)}>
             Feature
           </Link>
         </li>
         <li className={clsx(toggle ? classes.fade : '')}>
-          <Link className={classes.links} href="#goals">
+          <Link className={classes.links} href="#goals" onClick={() => setToogle(!true)}>
             Goals
           </Link>
         </li>
         <li className={clsx(toggle ? classes.fade : '')}>
-          <Link className={classes.joinbtn} href="/join">
+          <Link className={classes.joinbtn} href="/join" onClick={() => setToogle(!true)}>
             Join Us
           </Link>
         </li>
