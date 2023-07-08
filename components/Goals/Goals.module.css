@@ -32,6 +32,11 @@
   border-radius: 20px;
   border-color: transparent;
   padding: 40px 20px;
+  transition: all .3s ease;
+}
+
+.cardMain:hover{
+  transform: translateY(-10px) scale(1.01) ;
 }
 
 .card1 {
