@@ -9,9 +9,9 @@ const Header = () => {
 
   return (
     <nav className={classes.nav}>
-      <div className={classes.logo}>
+      <Link className={classes.logo} href="/" >
         <img src="/assets/whileLogo.png" alt="While logo" />
-      </div>
+      </Link>
       <div
         className={classes.hamburger}
         onClick={() => {

@@ -1,0 +1,147 @@
+.section {
+  margin: 100px 10px;
+}
+
+.content {
+  margin: 100px 15px;
+  margin-bottom: 56px; 
+}
+
+.subhead {
+  color: #000000cf;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid #000000cf;
+  /* display: inline; */
+  border-radius: 20px;
+  padding: 7px;
+  margin: 10px 0;
+  width: fit-content;
+}
+
+.heading {
+  color: #000000cf;
+  font-size: 46px;
+  font-weight: 700;
+  /* border: 2px solid #000000cf; */
+  /* display: inline; */
+  /* border-radius: 20px; */
+  /* padding: 7px; */
+  margin: 10px 0;
+  /* width: fit-content; */
+}
+
+.about {
+  color: #00000082;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px 0;
+  max-width: 610px;
+}
+
+.box {
+  border-top: 1px solid #777;
+  margin: 20px 15px;
+  padding: 20px 0;
+  max-width: 1000px;
+}
+
+.profile{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.designation {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000cf;
+  width: 20px;
+}
+
+.detail {
+  color: #000000cf;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 10px 0 20px 0;
+  max-width: 600px;
+  line-height: 26px;
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+  font-weight: 600;
+  color: #000000cf;
+  font-size: 14px;
+  border: 2px solid #000000cf;
+  /* display: inline; */
+  border-radius: 20px;
+  padding: 7px;
+  margin: 2px;
+}
+.tag:first-child {
+  margin-left: 0;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+@media (min-width: 400px){
+    .designation{
+        width: auto;
+    }
+}
+
+@media (min-width: 600px){
+    .section{
+        margin:100px 50px;
+    }
+}
+
+@media (min-width: 900px) {
+  .section {
+    margin: 100px;
+  }
+
+  .content{
+    margin: 80px 0;
+    margin-bottom: 50px;
+  }
+
+  .heading{
+    font-size: 50px;
+  }
+  .box{
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .designation{
+    font-size:25px
+  }
+
+  .detail{
+    font-size: 14px;
+  }
+
+  .tag{
+    margin: 10px;
+  }
+}

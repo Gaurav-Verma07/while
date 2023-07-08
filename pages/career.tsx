@@ -1,5 +1,7 @@
+import { Career } from '@/components';
+
 const index = () => {
-  return (<div>career page</div>);
+  return <Career />;
 };
 
 export default index;

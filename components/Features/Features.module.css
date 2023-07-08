@@ -24,6 +24,7 @@
 
 .content {
   margin: 30px -7px;
+  align-self: flex-start;
 }
 
 .title {
