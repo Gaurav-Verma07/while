@@ -10,7 +10,7 @@ const Goals = () => {
         </center>
       </h1>
       <div className={clsx(classes.row, 'row')}>
-        <div className={clsx(classes.cardcontainer, 'col-lg-4 col-md-6 col-md-12')}>
+        <div className={clsx(classes.cardcontainer, 'col-lg-4 col-md-6 col-md-12')} data-aos="fade-right">
           <div className={clsx(classes.card1, 'card', classes.cardMain)}>
             <h5 className={clsx(classes.cardTitle, 'card-title')}>Connect Mentors and Learners</h5>
             <p className={clsx(classes.cardText, 'card-text')}>
@@ -19,7 +19,7 @@ const Goals = () => {
             </p>
           </div>
         </div>
-        <div className={clsx(' col-lg-4 col-md-6 col-md-12', classes.cardcontainer)}>
+        <div className={clsx(' col-lg-4 col-md-6 col-md-12', classes.cardcontainer)} data-aos="fade-up">
           <div className={clsx(classes.card2, 'card', classes.cardMain)}>
             <h5 className={clsx(classes.cardTitle, 'card-title')}>Promote Collaboration and Networking</h5>
             <p className={clsx(classes.cardText, 'card-text')}>
@@ -28,7 +28,7 @@ const Goals = () => {
             </p>
           </div>
         </div>
-        <div className={clsx(classes.cardcontainer, 'col-lg-4 col-md-6 col-md-12')}>
+        <div className={clsx(classes.cardcontainer, 'col-lg-4 col-md-6 col-md-12')} data-aos="fade-left">
           <div className={clsx(classes.card3, 'card', classes.cardMain)}>
             <h5 className={clsx(classes.cardTitle, 'card-title')}>Expand Reach and Global Accessibility</h5>
             <p className={clsx(classes.cardText, 'card-text')}>
@@ -37,7 +37,7 @@ const Goals = () => {
             </p>
           </div>
         </div>
-        <div className={clsx(classes.cardcontainer, 'col-lg-4 col-md-6 col-md-12')}>
+        <div className={clsx(classes.cardcontainer, 'col-lg-4 col-md-6 col-md-12')} data-aos="fade-right">
           <div className={clsx(classes.card4, 'card', classes.cardMain)}>
             <h5 className={clsx(classes.cardTitle, 'card-title')}>Foster a Knowledge-Sharing Community</h5>
             <p className={clsx(classes.cardText, 'card-text')}>
@@ -46,7 +46,7 @@ const Goals = () => {
             </p>
           </div>
         </div>
-        <div className={clsx(classes.cardcontainer, 'col-lg-4 col-md-6 col-md-12')}>
+        <div className={clsx(classes.cardcontainer, 'col-lg-4 col-md-6 col-md-12')} data-aos="fade-left">
           <div className={clsx(classes.card5, 'card', classes.cardMain)}>
             <h5 className={clsx(classes.cardTitle, 'card-title')}>Ensure Quality and Credibility</h5>
             <p className={clsx(classes.cardText, 'card-text')}>

@@ -10,10 +10,13 @@ const Features = () => {
         <h1 className={clsx(classes.heading, 'gradient')}>Features</h1>
         {features.map((data, index) => (
           <div className={classes.box} key={index}>
-            <div className={clsx(classes.image, index % 2 !== 0 ? classes.order1 : classes.order0)}>
+            <div
+              className={clsx(classes.image, index % 2 !== 0 ? classes.order1 : classes.order0)}
+              data-aos={index % 2 !== 0 ? 'fade-left' : 'fade-right'}
+            >
               <Image src={data.img} alt="feature pic" layout="fill" />
             </div>
-            <div className={classes.content}>
+            <div className={classes.content} data-aos={index % 2 === 0 ? 'fade-left' : 'fade-right'}>
               <h3 className={classes.title}>{data.title}</h3>
               {/* <ul> */}
               {data.points.map((point, index) => (

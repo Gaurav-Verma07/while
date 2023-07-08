@@ -3,7 +3,7 @@ import classes from './Herobox.module.css';
 const Herobox = () => {
   return (
     <section className={classes.section} >
-      <div className={classes.content}>
+      <div className={classes.content} data-aos="fade-right">
         <h1 className={classes.heading}>
           Sharing<span className="gradient"> knowledge</span>, Shaping <span className="gradient">futures</span>
         </h1>
@@ -12,7 +12,7 @@ const Herobox = () => {
           personal and academic excellence.
         </p>
       </div>
-      <div className={classes.display}>
+      <div className={classes.display} data-aos="fade-left">
         <Image src="/assets/herobox.svg" alt="herobox" layout="fill" />
       </div>
     </section>
