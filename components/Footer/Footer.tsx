@@ -10,7 +10,7 @@ return (
                 <img src="/assets/whileLogo.png" alt="While logo" />
         </div>
         <div className={classes.social}>
-            <button className={classes.linkdin}>Linkdin</button>
+            <button className={classes.linkedin}>Linkedin</button>
             <button className={classes.whatsapp}>Whatsapp</button>
         </div>
         </div>
