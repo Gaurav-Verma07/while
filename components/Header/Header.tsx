@@ -29,17 +29,17 @@ const Header = () => {
           </Link>
         </li>
         <li className={clsx(toggle ? classes.fade : '')}>
-          <Link className={classes.links} href="#about" onClick={() => setToogle(!true)}>
-            About
+          <Link className={classes.links} href="/#about" onClick={() => setToogle(!true)}>
+            About Us
           </Link>
         </li>
         <li className={clsx(toggle ? classes.fade : '')}>
-          <Link className={classes.links} href="#features" onClick={() => setToogle(!true)}>
-            Feature
+          <Link className={classes.links} href="/#features" onClick={() => setToogle(!true)}>
+            Features
           </Link>
         </li>
         <li className={clsx(toggle ? classes.fade : '')}>
-          <Link className={classes.links} href="#goals" onClick={() => setToogle(!true)}>
+          <Link className={classes.links} href="/#goals" onClick={() => setToogle(!true)}>
             Goals
           </Link>
         </li>
