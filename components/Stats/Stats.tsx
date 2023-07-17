@@ -1,16 +1,17 @@
+import CountUp from 'react-countup';
 import classes from './Stats.module.css';
 
 const data = [
   {
-    data: '50+',
+    data: 50,
     type: 'Colleges',
   },
   {
-    data: '1K+',
+    data: 1000,
     type: 'Students',
   },
   {
-    data: '20+',
+    data: 20,
     type: 'Mentors',
   },
 ];
@@ -21,7 +22,9 @@ const Stats = () => {
       <div className={classes.main}>
         {data.map((item, index) => (
           <div className={classes.box} key={index}>
-            <h1 className={classes.data}>{item.data}</h1>
+            <h1 className={classes.data}>
+              <CountUp end={item.data}/>+
+            </h1>
             <h3 className={classes.type}>{item.type}</h3>
           </div>
         ))}
