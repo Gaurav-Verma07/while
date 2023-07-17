@@ -18,7 +18,7 @@
 
 .cardcontainer {
   text-align: center;
-  margin: 60px auto;
+  margin: 30px auto;
   width: auto;
 }
 
@@ -40,23 +40,23 @@
 }
 
 .card1 {
-  box-shadow: 0px 0px 25px 4px rgba(255, 0, 0, 0.3);
+  box-shadow: 0px 0px 25px 4px rgba(255, 0, 0, 0.2);
 }
 
 .card2 {
-  box-shadow: 0px 0px 25px 4px rgba(0, 128, 0, 0.3);
+  box-shadow: 0px 0px 25px 4px rgba(0, 128, 0, 0.2);
 }
 
 .card3 {
-  box-shadow: 0px 0px 25px 4px rgba(0, 0, 255, 0.3);
+  box-shadow: 0px 0px 25px 4px rgba(0, 0, 255, 0.2);
 }
 
 .card4 {
-  box-shadow: 0px 0px 25px 4px rgba(128, 0, 128, 0.3);
+  box-shadow: 0px 0px 25px 4px rgba(128, 0, 128, 0.2);
 }
 
 .card5 {
-  box-shadow: 0px 0px 25px 4px rgba(0, 128, 128, 0.3);
+  box-shadow: 0px 0px 25px 4px rgba(0, 128, 128, 0.2);
 }
 
 .card6 {
@@ -96,5 +96,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
+  }
+  .cardcontainer{
+    margin: 25px;
   }
 }
