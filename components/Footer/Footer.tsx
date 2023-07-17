@@ -10,8 +10,8 @@ return (
                 <img src="/assets/whileLogo.png" alt="While logo" />
         </div>
         <div className={classes.social}>
-            <button className={classes.linkedin}>Linkedin</button>
-            <button className={classes.whatsapp}>Whatsapp</button>
+            <a href="https://www.linkedin.com/company/while-network-private-limited/"><button className={classes.linkedin}>Linkedin</button></a>
+            <a href="https://chat.whatsapp.com/GsWWLBfsCBxILxQWjBVIAk"><button className={classes.whatsapp}>Whatsapp</button></a>
         </div>
         </div>
         <div className={classes.lower}>
