@@ -16,30 +16,29 @@ return (
         </div>
         <div className={classes.lower}>
             <div className={classes.company}>
-                <h3>Company</h3>
-               <ul>
+                <h3 className={classes.heading}>Company</h3>
+               <ul className={classes.links}>
                     
-                        <div>About</div>
+                        <Link className= {classes.link} href="/#about">About</Link>
                     
-                        <div>Goals</div>
+                        <Link className= {classes.link} href="/#goals" >Goals</Link>
                     
-                        <div>Teams</div>
+                        {/* <Link className= {classes.link}>Teams</Link> */}
                     
-                        <div>Features</div>
+                        <Link className= {classes.link} href="/#features" >Features</Link>
                     
                 </ul> 
             </div>
             <div className={classes.join}>
-                <h3>Join Us</h3>
-                <ul>
+                <h3 className={classes.heading} >Join Us</h3>
+                <ul className={classes.links} >
                     
-                        <div>Campus Ambassador</div>
+                <Link className= {classes.link} href="https://forms.gle/hxU3cJGEa67yiFnw7">Campus Ambassador</Link>                    
+                <Link className= {classes.link} href="https://forms.gle/hxU3cJGEa67yiFnw7">Mentor</Link>
                     
-                        <div>Mentor</div>
+                <Link className= {classes.link} href="https://forms.gle/hxU3cJGEa67yiFnw7">Mentee</Link>
                     
-                        <div>Mentee</div>
-                    
-                        <div>Management</div>
+                {/* <Link className= {classes.link} href="https://forms.gle/hxU3cJGEa67yiFnw7">About</Link> */}
                     
                 </ul> 
             </div>
