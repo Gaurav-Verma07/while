@@ -5,7 +5,7 @@ const Herobox = () => {
     <section className={classes.section} >
       <div className={classes.content} data-aos="fade-right">
         <h1 className={classes.heading}>
-          Sharing<span className="gradient"> knowledge</span>, Shaping <span className="gradient">futures</span>
+          Sharing<span className="gradient"> knowledge</span>, Shaping <span className="gradient">future</span>
         </h1>
         <p className={classes.subtext}>
           Ignite the potential within every young mind as we inspire, guide, and support them on their journey towards
