@@ -29,6 +29,11 @@
   line-height: 30px;
   max-width: 370px;
 }
+@media (max-width: 600px){
+  .content{
+    padding-left: 40px;
+  }
+}
 
 @media (min-width: 600px) {
   .display {
